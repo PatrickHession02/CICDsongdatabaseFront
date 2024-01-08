@@ -10,13 +10,11 @@ function App() {
   const getSongs = async () =>{
 
     try{
-
+      const response = await api.get("/api/v1/songs");
+      setSongs(response.data);
     } catch(err){
       console.log(err);
     }
-    const response = await api.get("/api/v1/songs");
-
-    setSongs(response.data);
   }
   return (
     <div className="App">
