@@ -16,6 +16,10 @@ function App() {
       console.log(err);
     }
   }
+
+  useEffect(() => {
+    getSongs();
+  },[])
   return (
     <div className="App">
    
