@@ -1,10 +1,11 @@
-import React from 'react'
 
-const Home = ({movies}) => {
+import Artist from '../artist/Artist';
+
+const Home = ({songs}) => {
   return (
-    <div>
-      Welcome!!!
-    </div>
+  <Artist songs={songs}>
+
+  </Artist>
   )
 }
 
