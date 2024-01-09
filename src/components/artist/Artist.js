@@ -14,7 +14,7 @@ const Artist = ({ songs }) => {
           <Paper key={song.songID}>
             <div className='song-card-container'>
               <div className="song-card" style={{ "--img": `url(${song.backdrops[0]})` }}>
-                <div className="lyrics">
+                <div className="song-detail">
                   <div className="poster">
                     <img src={song.poster} alt="" />
                   </div>
