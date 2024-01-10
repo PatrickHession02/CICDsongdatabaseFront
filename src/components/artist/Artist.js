@@ -21,6 +21,15 @@ const Artist = ({ songs }) => {
                   <div className="song-title">
                     <h4>{song.title}</h4>
                   </div>
+                    <div className="song-buttons-container">
+                    <Link to={`/Video/${song.musicVideoLink.substring(song.musicVideoLink.length - 11)}`}>
+                        <div className="play-button-icon-container">
+                            <FontAwesomeIcon className="play-button-icon"
+                                icon = {faCirclePlay}
+                            />
+                        </div>
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
