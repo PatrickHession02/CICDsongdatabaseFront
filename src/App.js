@@ -6,6 +6,7 @@ import Layout from './components/Layout';
 import { Routes, Route} from 'react-router-dom';
 import Home from './components/home/Home';
 import Header from './components/header/Header';
+import Video from './components/musicVideo/Video';
 
 function App() {
   const [songs, setSongs] = useState();
@@ -29,7 +30,7 @@ function App() {
        <Routes>
          <Route path='/' element={<Layout/>}>
           <Route path='/' element={<Home songs={songs}/>} ></Route>
-         
+          <Route path="/Video/:ytVideoId" element={<Video/>}></Route>
          </Route>
       </Routes>
     </div>
